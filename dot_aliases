@@ -2,3 +2,5 @@ alias cls="clear"
 
 alias gf="git fetch --all --prune"
 alias gl="git log --oneline --graph --all"
+
+alias config=chezmoi
