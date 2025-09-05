@@ -1,0 +1,7 @@
+{{- if eq .chezmoi.os "darwin" -}}
+{{-   include ".gitconfig_macos" -}}
+{{- else if eq .chezmoi.os "linux" -}}
+{{-   include ".gitconfig_linux" -}}
+{{- else -}}
+{{-   include ".gitconfig_windows" -}}
+{{- end -}}

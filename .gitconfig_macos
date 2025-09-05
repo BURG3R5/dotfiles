@@ -1,0 +1,12 @@
+[user]
+	name = Aditya Rajput
+	email = aditya.sanjay.rajput@plaid.co.jp
+	signingkey = FD70B44F
+[commit]
+	gpgsign = true
+[push]
+	default = current
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[core]
+	autocrlf = input

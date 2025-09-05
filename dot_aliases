@@ -2,5 +2,18 @@ alias cls="clear"
 
 alias gf="git fetch --all --prune"
 alias gl="git log --oneline --graph --all"
+alias gs="git status"
+alias gb="git branch -a"
 
 alias config=chezmoi
+
+alias dr="docker compose up --build --detach --remove-orphans"
+
+alias ngcd="cd /etc/nginx/sites-available/"
+function ngln() {
+	sudo ln -s "/etc/nginx/sites-available/$1.conf" "/etc/nginx/sites-enabled/"
+}
+alias ngtest="sudo nginx -t"
+alias ngrest="sudo systemctl restart nginx"
+
+alias py="python3"

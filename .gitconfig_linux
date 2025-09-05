@@ -1,0 +1,7 @@
+[user]
+	name = Aditya Rajput
+	email = adiraj20072002@gmail.com
+[push]
+	default = current
+[core]
+	autocrlf = input

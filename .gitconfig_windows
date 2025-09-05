@@ -1,0 +1,12 @@
+[user]
+	name = Aditya Rajput
+	email = adiraj20072002@gmail.com
+	signingkey = B2F0DDB0933D9998
+[commit]
+	gpgsign = true
+[push]
+	default = current
+[gpg]
+	program = D:/Program Files/Git/user/bin/gpg.exe
+[core]
+	autocrlf = input
