@@ -1,0 +1,8 @@
+{{- $enableAutoPush := promptBool "Enable auto push?" -}}
+
+{{- if enableAutoPush -}}
+[git]
+    autoCommit = true
+    autoPush = true
+    commitMessageTemplate = {{- "{{ promptString \"Commit message\" }}" -}}
+{{- end -}}
