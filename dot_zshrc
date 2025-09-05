@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 path=('/Library/Frameworks/Python.framework/Versions/3.13/bin' $path)
 export PATH
 
@@ -63,4 +63,4 @@ if [ -f '/Users/admin/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/adm
 export PATH=/Library/Frameworks/Python.framework/Versions/3.13/bin/python3:$PATH
 export PATH=$PATH:/Users/admin/.spicetify
 
-source .aliases
+source ~/.aliases
