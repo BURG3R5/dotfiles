@@ -17,3 +17,33 @@ alias ngtest="sudo nginx -t"
 alias ngrest="sudo systemctl restart nginx"
 
 alias py="python3"
+
+calc() {
+	local result=""
+	result="$(printf "scale=10;%s\\n" "$*" | bc --mathlib | tr -d '\\\n')"
+
+	if [[ "$result" == *.* ]]; then
+		printf "%s" "$result" |
+			sed -e 's/^\./0./'  \
+			-e 's/^-\./-0./' \
+			-e 's/0*$//;s/\.$//'
+	else
+		printf "%s" "$result"
+	fi
+	printf "\\n"
+}
+
+mkd() {
+	mkdir -p "$@"
+	cd "$@" || exit
+}
+
+tmpd() {
+	local dir
+	if [ $# -eq 0 ]; then
+		dir=$(mktemp -d)
+	else
+		dir=$(mktemp -d -t "${1}.XXXXXXXXXX")
+	fi
+	cd "$dir" || exit
+}
