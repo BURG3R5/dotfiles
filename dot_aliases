@@ -1,11 +1,13 @@
 alias cls="clear"
 
+alias ..="cd .."
+
 alias gf="git fetch --all --prune"
 alias gl="git log --oneline --graph --all"
 alias gs="git status"
 alias gb="git branch -a"
 
-alias config=chezmoi
+alias config="chezmoi"
 
 alias dr="docker compose up --build --detach --remove-orphans"
 
@@ -15,6 +17,8 @@ function ngln() {
 }
 alias ngtest="sudo nginx -t"
 alias ngrest="sudo systemctl restart nginx"
+
+alias myip="curl https://ipv4.icanhazip.com/"
 
 alias py="python3"
 
@@ -37,7 +41,6 @@ mkd() {
 	mkdir -p "$@"
 	cd "$@" || exit
 }
-
 tmpd() {
 	local dir
 	if [ $# -eq 0 ]; then
