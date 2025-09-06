@@ -1,6 +1,4 @@
-{{- $enableAutoPush := promptBool "Enable auto push?" -}}
-
-{{- if enableAutoPush -}}
+{{- if promptBool "Enable auto-push" false -}}
 [git]
     autoCommit = true
     autoPush = true
